@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,6 +26,43 @@
     ></script>
     <script src="./assets/maugallery-min.js" defer></script>
     <script src="./assets/scripts-min.js" defer></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Nina Carducci",
+        "description": "Photographe professionnelle à Bordeaux — portraits, mariages et événements.",
+        "telephone": "+33 5 56 67 78 89",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "68 avenue Alsace-Lorraine",
+          "postalCode": "33200",
+          "addressLocality": "Bordeaux",
+          "addressCountry": "FR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 44.8378,
+          "longitude": -0.5792
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "10:00",
+            "closes": "19:00"
+          }
+        ],
+        "url": "https://zesir.github.io/NinaCarducci/",
+        "@id": "https://zesir.github.io/NinaCarducci/#localbusiness"
+      }
+    </script>
   </head>
   <body>
     <main>
@@ -161,11 +198,7 @@
       <section id="gallery" aria-labelledby="gallery-title">
         <h2 class="title">Portfolio</h2>
         <div class="container py-3">
-          <div
-            class="gallery"
-            role="list"
-            aria-label="Galerie de photographies"
-          >
+          <div class="gallery" aria-label="Galerie de photographies">
             <img
               data-gallery-tag="Concert"
               class="gallery-item"
@@ -250,7 +283,7 @@
       <section id="services" aria-labelledby="services-title">
         <h2 class="title">Mes services</h2>
         <ul class="container">
-          <li class="service" role="article">
+          <li class="service">
             <article class="service__description">
               <h3>Shooting photo</h3>
               <p>
@@ -264,7 +297,7 @@
               <span>Matériel, déplacement inclus</span>
             </div>
           </li>
-          <li class="service" role="article">
+          <li class="service">
             <article class="service__description">
               <h3>Retouches</h3>
               <p>
@@ -278,7 +311,7 @@
               <span>2 AR par photo</span>
             </div>
           </li>
-          <li class="service" role="article">
+          <li class="service">
             <article class="service__description">
               <h3>Album photos</h3>
               <p>
