@@ -128,7 +128,7 @@
           </button>
         </div>
       </section>
-      <section id="about">
+      <section id="about" aria-labelledby="about-title">
         <figure class="picture left">
           <img
             src="./assets/images/nina-1000x1000.webp"
@@ -158,10 +158,14 @@
           </p>
         </div>
       </section>
-      <section id="gallery">
+      <section id="gallery" aria-labelledby="gallery-title">
         <h2 class="title">Portfolio</h2>
         <div class="container py-3">
-          <div class="gallery">
+          <div
+            class="gallery"
+            role="list"
+            aria-label="Galerie de photographies"
+          >
             <img
               data-gallery-tag="Concert"
               class="gallery-item"
@@ -243,10 +247,10 @@
           </figure>
         </div>
       </section>
-      <section id="services">
+      <section id="services" aria-labelledby="services-title">
         <h2 class="title">Mes services</h2>
         <ul class="container">
-          <li class="service">
+          <li class="service" role="article">
             <article class="service__description">
               <h3>Shooting photo</h3>
               <p>
@@ -260,7 +264,7 @@
               <span>Matériel, déplacement inclus</span>
             </div>
           </li>
-          <li class="service">
+          <li class="service" role="article">
             <article class="service__description">
               <h3>Retouches</h3>
               <p>
@@ -274,7 +278,7 @@
               <span>2 AR par photo</span>
             </div>
           </li>
-          <li class="service">
+          <li class="service" role="article">
             <article class="service__description">
               <h3>Album photos</h3>
               <p>
@@ -311,7 +315,7 @@
               N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24
               heures
             </p>
-            <form action="#" method="post">
+            <form action="#" method="post" aria-labelledby="contact-title">
               <label for="nom">Nom</label>
               <input type="text" name="nom" id="nom" required />
               <label for="email">Email</label>
@@ -323,7 +327,11 @@
                 cols="30"
                 rows="10"
               ></textarea>
-              <input type="submit" value="Envoyer" />
+              <input
+                type="submit"
+                value="Envoyer"
+                aria-label="Envoyer le formulaire de contact"
+              />
             </form>
           </div>
           <div class="picture right">
