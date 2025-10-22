@@ -64,6 +64,7 @@
         "name": "Nina Carducci",
         "description": "Photographe professionnelle à Bordeaux — portraits, mariages et événements.",
         "telephone": "+33 5 56 67 78 89",
+        "priceRange": "50€ - 400€",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "68 avenue Alsace-Lorraine",
@@ -323,47 +324,67 @@
           </figure>
         </div>
       </section>
-      <section id="services" aria-labelledby="services-title">
+      <section
+        id="services"
+        aria-labelledby="services-title"
+        itemscope
+        itemtype="https://schema.org/OfferCatalog"
+      >
         <h2 class="title">Mes services</h2>
         <ul class="container">
           <li class="service">
-            <article class="service__description">
-              <h3>Shooting photo</h3>
-              <p>
+            <article
+              class="service__description"
+              itemscope
+              itemtype="https://schema.org/Service"
+              itemprop="itemOffered"
+            >
+              <h3 itemprop="name">Shooting photo</h3>
+              <p itemprop="description">
                 Pour capturer vos moments les plus précieux et garder un
                 souvenir impérissable. Je me déplace en Île-de-France pour
                 réaliser vos photos
               </p>
             </article>
             <div class="service__price">
-              <h4>350€/demi journée</h4>
+              <h4 itemprop="price">350€/demi journée</h4>
               <span>Matériel, déplacement inclus</span>
             </div>
           </li>
           <li class="service">
-            <article class="service__description">
-              <h3>Retouches</h3>
-              <p>
+            <article
+              class="service__description"
+              itemscope
+              itemtype="https://schema.org/Service"
+              itemprop="itemOffered"
+            >
+              <h3 itemprop="name">Retouches</h3>
+              <p itemprop="description">
                 Vous souhaitez retoucher vos photos pour un résultat
                 professionnel ? Bénéficier d’un rendu optimal pour vos
                 publications
               </p>
             </article>
             <div class="service__price">
-              <h4>50€/photo</h4>
+              <h4 itemprop="price">50€/photo</h4>
               <span>2 AR par photo</span>
             </div>
           </li>
           <li class="service">
-            <article class="service__description">
-              <h3>Album photos</h3>
-              <p>
+            <article
+              class="service__description"
+              itemscope
+              itemtype="https://schema.org/Service"
+              itemprop="itemOffered"
+            >
+              <h3 itemprop="name">Album photos</h3>
+              <p itemprop="description">
                 Partagez avec vos proches et vos clients les photos des moments
                 partagés ensemble à travers un album photo personnalisé
               </p>
             </article>
             <div class="service__price">
-              <h4>400€ album A4</h4>
+              <h4 itemprop="price">400€ album A4</h4>
               <span>30 pages recto/verso</span>
             </div>
           </li>
