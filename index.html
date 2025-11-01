@@ -114,7 +114,9 @@
                 href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
                 target="_blank"
                 aria-label="Profil Instagram de Nina Carducci"
-                ><img src="assets/images/instagram.png" alt="Logo Instagram"
+                ><img
+                  src="assets/images/instagram.png"
+                  alt="Lien vers profil Instagram de Nina Carducci"
               /></a>
             </li>
           </ul>
@@ -207,7 +209,7 @@
           />
         </figure>
         <div id="about-me">
-          <h2 class="about-me__title">A propos de moi</h2>
+          <h2 class="about-me__title" id="about-title">A propos de moi</h2>
           <p itemprop="description">
             <strong class="about-me__introduction">
               Devenir photographe était pour moi une évidence. Comme si j’y
@@ -242,7 +244,7 @@
         </div>
       </section>
       <section id="gallery" aria-labelledby="gallery-title">
-        <h2 class="title">Portfolio</h2>
+        <h2 class="title" id="gallery-title">Portfolio</h2>
         <div class="container py-3">
           <div class="gallery" aria-label="Galerie de photographies">
             <img
@@ -332,7 +334,7 @@
         itemscope
         itemtype="https://schema.org/OfferCatalog"
       >
-        <h2 class="title">Mes services</h2>
+        <h2 class="title" id="sevices-title">Mes services</h2>
         <ul class="container">
           <li class="service">
             <article
@@ -414,7 +416,7 @@
               N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24
               heures
             </p>
-            <form action="#" method="post" aria-labelledby="contact-title">
+            <form action="#" method="post">
               <label for="nom">Nom</label>
               <input type="text" name="nom" id="nom" required />
               <label for="email">Email</label>
